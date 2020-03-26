@@ -14,7 +14,7 @@ class welcome extends TestCase
     {
         $this->get(saludo/selmar/sell)
         ->assertStatus(200)
-        ->assertSee('hola selmar, tu apodo es sell');
+        ->assertSee('hola Selmar, tu apodo es Sell');
     }
 
     /** @test */
@@ -23,6 +23,6 @@ class welcome extends TestCase
     {
         $this->get(saludo/selmar)
         ->assertStatus(200)
-        ->assertSee('hola selmar');
+        ->assertSee('hola Selmar');
     }
 }
